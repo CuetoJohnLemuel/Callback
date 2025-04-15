@@ -28,7 +28,7 @@
             console.log('Got code, redirecting to app...');
             
             // Use the proper app scheme format
-            window.location.href = `com.snapalarm.app:/oauth2redirect?code=${code}&state=${state}`;
+            window.location.href = `com.mauialarm.app:/oauth2redirect?code=${code}&state=${state}`;
           } else {
             document.getElementById('status').textContent = 'No authorization code received.';
             console.error('No code received');
